@@ -11,18 +11,18 @@
     <button id="menuBtn" class="fixed top-4 right-4 z-50 p-2 focus:outline-none">
         
         <!-- X icon (visible when overlay menu is shown) -->
-        <svg id="closeIcon" class="w-6 h-6 sm:w-8 sm:h-8" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <svg id="closeIcon" class="w-6 h-6 sm:w-8 sm:h-8 hidden" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
         </svg>
 
         <!-- Hamburger icon (visible when welcome section is shown) -->
-        <svg id="menuIcon" class="w-6 sm:w-8 sm:h-8 hidden" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <svg id="menuIcon" class="w-6 sm:w-8 sm:h-8" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
         </svg>
     </button>
 
     <!-- Welcome Section (Initially Hidden) -->
-    <section id="welcomeSection" class="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 to-purple-600 hidden px-4 sm:px-6 lg:px-8">
+    <section id="welcomeSection" class="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 to-purple-600 px-4 sm:px-6 lg:px-8">
         <div class="text-center text-white">
             <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">Welcome!</h1>
             <p class="text-lg sm:text-xl md:text-2xl mb-8">I'm Jordi Felip Zayas, a Salesforce developer</p>
@@ -32,7 +32,7 @@
     </section>
 
     <!-- Overlay Menu (Initially Visible) -->
-    <div id="overlayMenu" class="fixed inset-0 bg-black bg-opacity-90 z-40 flex items-center justify-center">
+    <div id="overlayMenu" class="fixed inset-0 bg-black bg-opacity-90 z-40 flex items-center justify-center hidden">
         <nav class="text-white text-xl sm:text-2xl md:text-3xl">
             <ul class="space-y-6 sm:space-y-8">
                 <li><a href="pages/cv.html" class="hover:text-gray-300 transition duration-300">CV</a></li>
